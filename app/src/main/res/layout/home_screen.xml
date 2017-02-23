@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.percent.PercentFrameLayout
+            android:layout_alignParentBottom="true"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="50%"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:src="@drawable/logo_ifood_red"
+                android:tint="#F00"
+                app:layout_marginPercent="15%"
+                />
+        </android.support.percent.PercentFrameLayout>
+
+        <ImageView
+            android:id="@+id/android_things"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/android_things"
+            app:layout_heightPercent="20%"
+            app:layout_widthPercent="50%"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@id/android_things"
+            android:background="#000"
+            />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            app:layout_heightPercent="80%">
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The button was not clicked yet"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="48dp"
+                android:textSize="28sp"
+                />
+        </FrameLayout>
+    </android.support.percent.PercentRelativeLayout>
+</layout>
